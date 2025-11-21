@@ -3,133 +3,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang Profile Các Thành Viên</title>
+    <title>Nhóm 3- 12 Anh</title> 
+
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: #eef3f8;
             margin: 0;
-            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(90deg, #0066ff, #00bbff);
+            color: white;
+            text-align: center;
+            padding: 40px 10px;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 18px;
+            opacity: 0.95;
         }
 
         .container {
-            width: 80%;
-            margin: 0 auto;
-            padding-top: 20px;
+            width: 85%;
+            margin: auto;
+            padding: 30px 0;
         }
 
-        h1 {
-            text-align: center;
-            color: #333;
+        .intro-box, .member-box {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        .member-box h2 {
+            color: #0066cc;
+            font-size: 28px;
+            margin-bottom: 20px;
         }
 
         .member {
-            display: flex;
-            margin-bottom: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
+            font-size: 24px;
+            font-weight: bold;
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
         }
 
-        .member img {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 50%;
-            margin: 10px;
+        .member:last-child {
+            border-bottom: none;
         }
 
-        .member-details {
+        .card {
+            background: white;
             padding: 20px;
-            flex-grow: 1;
+            border-radius: 10px;
+            margin: 15px 0;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: 0.2s;
         }
 
-        .member-details h2 {
-            margin: 0;
-            color: #333;
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
         }
 
-        .member-details p {
-            margin: 5px 0;
-            color: #555;
-        }
-
-        .member-details a {
-            color: #007bff;
+        .card a {
+            display: inline-block;
+            margin-top: 10px;
             text-decoration: none;
+            font-weight: bold;
+            color: #0066ff;
         }
 
-        .member-details a:hover {
-            text-decoration: underline;
-        }
-
-        .background {
-            background-color: #007bff;
-            color: #fff;
-            padding: 10px;
+        footer {
+            background: #dfe6ee;
             text-align: center;
-            font-size: 18px;
+            padding: 15px;
+            margin-top: 30px;
+            font-size: 14px;
         }
     </style>
 </head>
+
 <body>
+
+    <header>
+        <h1>Nhóm 3– Lớp 12 Anh</h1> 
+        <p>Trang web tổng hợp các bài tập và bài thuyết trình của nhóm</p>
+    </header>
+
     <div class="container">
-        <h1>Thông Tin Các Thành Viên</h1>
 
-        <!-- Thành viên 1 -->
-        <div class="member">
-            <img src="https://via.placeholder.com/150" alt="Ảnh thành viên 1">
-            <div class="member-details">
-                <h2>Nguyễn Văn A</h2>
-                <p>Lớp: 12A1</p>
-                <p><a href="https://www.facebook.com/username1" target="_blank">Facebook</a></p>
+        <!-- Hi --> 
+        <div class="intro-box">
+            <h2>👋 Hi!</h2> 
+            <p>Chào mừng bạn đến với trang web chính thức của <b>Nhóm 3 – 12 Anh</b>. Đây là nơi tổng hợp các bài tập, bài thuyết trình và sản phẩm học tập của nhóm.</p> 
+        </div>
+
+        <!-- Giới thiệu thành viên -->
+        <div class="member-box">
+            <h2>👥 Thành viên nhóm</h2>
+
+            <div class="member">
+                <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Ftripi.vn%2Fblog%2Fvi%2Fdoi-song%2Fnhung-hinh-anh-dang-yeu-ve-nhung-chu-cho-de-thuong-tripi&psig=AOvVaw3imzXjGs7dn0uUlhrS0znK&ust=1763773393620000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCKDYxcWFgpEDFQAAAAAdAAAAABAE" class="member-img">
+                Tuyết Hạnh
             </div>
-        </div>
 
-        <!-- Thành viên 2 -->
-        <div class="member">
-            <img src="https://via.placeholder.com/150" alt="Ảnh thành viên 2">
-            <div class="member-details">
-                <h2>Trần Thị B</h2>
-                <p>Lớp: 12A2</p>
-                <p><a href="https://www.facebook.com/username2" target="_blank">Facebook</a></p>
+            <div class="member">
+                <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Ftripi.vn%2Fblog%2Fvi%2Fdoi-song%2Fnhung-hinh-anh-dang-yeu-ve-nhung-chu-cho-de-thuong-tripi&psig=AOvVaw3imzXjGs7dn0uUlhrS0znK&ust=1763773393620000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCKDYxcWFgpEDFQAAAAAdAAAAABAE" class="member-img">
+                Hải Yến
             </div>
-        </div>
 
-        <!-- Thành viên 3 -->
-        <div class="member">
-            <img src="https://via.placeholder.com/150" alt="Ảnh thành viên 3">
-            <div class="member-details">
-                <h2>Phạm Minh C</h2>
-                <p>Lớp: 12A3</p>
-                <p><a href="https://www.facebook.com/username3" target="_blank">Facebook</a></p>
+            <div class="member">
+                <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Ftripi.vn%2Fblog%2Fvi%2Fdoi-song%2Fnhung-hinh-anh-dang-yeu-ve-nhung-chu-cho-de-thuong-tripi&psig=AOvVaw3imzXjGs7dn0uUlhrS0znK&ust=1763773393620000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCKDYxcWFgpEDFQAAAAAdAAAAABAE" class="member-img">
+                Mỹ Anh
             </div>
-        </div>
 
-        <!-- Thành viên 4 -->
-        <div class="member">
-            <img src="https://via.placeholder.com/150" alt="Ảnh thành viên 4">
-            <div class="member-details">
-                <h2>Lê Thị D</h2>
-                <p>Lớp: 12A4</p>
-                <p><a href="https://www.facebook.com/username4" target="_blank">Facebook</a></p>
+            <div class="member">
+                <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Ftripi.vn%2Fblog%2Fvi%2Fdoi-song%2Fnhung-hinh-anh-dang-yeu-ve-nhung-chu-cho-de-thuong-tripi&psig=AOvVaw3imzXjGs7dn0uUlhrS0znK&ust=1763773393620000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCKDYxcWFgpEDFQAAAAAdAAAAABAE" class="member-img">
+                Thảo Uyên
             </div>
+
+            <div class="member">
+                <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Ftripi.vn%2Fblog%2Fvi%2Fdoi-song%2Fnhung-hinh-anh-dang-yeu-ve-nhung-chu-cho-de-thuong-tripi&psig=AOvVaw3imzXjGs7dn0uUlhrS0znK&ust=1763773393620000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCKDYxcWFgpEDFQAAAAAdAAAAABAE" class="member-img">
+                Hải Vy
+            </div> 
         </div>
 
-        <!-- Thành viên 5 -->
-        <div class="member">
-            <img src="https://via.placeholder.com/150" alt="Ảnh thành viên 5">
-            <div class="member-details">
-                <h2>Hoàng Minh E</h2>
-                <p>Lớp: 12A5</p>
-                <p><a href="https://www.facebook.com/username5" target="_blank">Facebook</a></p>
-            </div>
+        <!-- Danh sách bài tập -->
+        <h2>📚 Danh sách bài tập</h2>
+
+        <div class="card">
+            <h3>Bài tập 1: (Nhập tiêu đề bài tập)</h3>
+            <p>Mô tả: (Nhập mô tả bài tập)</p>
+            <a href="#" target="_blank">Xem bài làm</a>
         </div>
 
-        <div class="background">
-            <p>Nhóm học tập tuyệt vời!</p>
+        <div class="card">
+            <h3>Bài tập 2: (Nhập tiêu đề bài tập)</h3>
+            <p>Mô tả: (Nhập mô tả bài tập)</p>
+            <a href="#" target="_blank">Xem bài làm</a>
         </div>
+
+        <!-- Bài thuyết trình -->
+        <h2>🎤 Bài thuyết trình</h2>
+
+        <div class="card">
+            <h3>Thuyết trình: (Tên chủ đề)</h3>
+            <p>Mô tả: (Thông tin ngắn về bài thuyết trình)</p>
+            <a href="https://www.canva.com/design/DAGz2i45OB8/UU2sHwnZwc0QJoMU2tDsMQ/edit?utm_content=DAGz2i45OB8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank">Xem bài thuyết trình</a>
+        </div>
+
     </div>
+
+    <footer>
+        © 2025 - Nhóm 3 | Lớp 12 Anh 
+    </footer>
+
 </body>
 </html>
