@@ -3,134 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang Profile Các Thành Viên</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            margin: 0;
-            padding: 0;
-        }
-
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            padding-top: 20px;
-        }
-
-        h1 {
-            text-align: center;
-            color: #333;
-        }
-
-        .member {
-            display: flex;
-            margin-bottom: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-        }
-
-        .member img {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 50%;
-            margin: 10px;
-        }
-
-        .member-details {
-            padding: 20px;
-            flex-grow: 1;
-        }
-
-        .member-details h2 {
-            margin: 0;
-            color: #333;
-        }
-
-        .member-details p {
-            margin: 5px 0;
-            color: #555;
-        }
-
-        .member-details a {
-            color: #007bff;
-            text-decoration: none;
-        }
-
-        .member-details a:hover {
-            text-decoration: underline;
-        }
-
-        .background {
-            background-color: #007bff;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-            font-size: 18px;
-        }
-    </style>
+    <title>Nhóm Lớp - Team Profile</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Thông Tin Các Thành Viên</h1>
 
-        <!-- Thành viên 1 -->
-        <div class="member">
-            <img src="https://mythuatbui.edu.vn/wp-content/uploads/2025/01/con-meo-hinh-ve-cute-de-thuong-1.png" alt="Ảnh thành viên 1">
-            <div class="member-details">
-                <h2>Mỹ Anh</h2>
-                <p>Lớp: 12A</p>
-                <p><a href="https://www.facebook.com/username1" target="_blank">Facebook</a></p>
+    <!-- Banner -->
+    <header class="banner">
+        <img src="banner.jpg" alt="Banner" class="banner-image">
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo" class="logo">
+        </div>
+        <h1 class="team-name">Nhóm Lớp ABC</h1>
+    </header>
+
+    <!-- Thông tin các thành viên -->
+    <section class="team-members">
+        <h2>Thông tin các thành viên</h2>
+        <div class="members">
+            <div class="member" onclick="showProfile('member1')">
+                <img src="member1.jpg" alt="Thành viên 1" class="avatar">
+                <p>Thành viên 1</p>
+            </div>
+            <div class="member" onclick="showProfile('member2')">
+                <img src="member2.jpg" alt="Thành viên 2" class="avatar">
+                <p>Thành viên 2</p>
+            </div>
+            <div class="member" onclick="showProfile('member3')">
+                <img src="member3.jpg" alt="Thành viên 3" class="avatar">
+                <p>Thành viên 3</p>
+            </div>
+            <div class="member" onclick="showProfile('member4')">
+                <img src="member4.jpg" alt="Thành viên 4" class="avatar">
+                <p>Thành viên 4</p>
+            </div>
+            <div class="member" onclick="showProfile('member5')">
+                <img src="member5.jpg" alt="Thành viên 5" class="avatar">
+                <p>Thành viên 5</p>
             </div>
         </div>
+    </section>
 
-        <!-- Thành viên 2 -->
-        <div class="member">
-            <img src="https://kenh14cdn.com/2017/photo-6-1509256567632.jpg" alt="Ảnh thành viên 2">
-            <div class="member-details">
-                <h2>Hải Yến</h2>
-                <p>Lớp: 12A</p>
-                <p><a href="https://www.facebook.com/username2" target="_blank">Facebook</a></p>
-            </div>
-        </div>
-
-        <!-- Thành viên 3 -->
-        <div class="member">
-            <img src="https://topanh.com/wp-content/uploads/2025/05/hinh-con-vat-cute-1-768x1365.jpg" alt="Ảnh thành viên 3">
-            <div class="member-details">
-                <h2>Tuyết Hạnh</h2>
-                <p>Lớp: 12A</p>
-                <p><a href="https://www.facebook.com/username3" target="_blank">Facebook</a></p>
-            </div>
-        </div>
-
-        <!-- Thành viên 4 -->
-        <div class="member">
-            <img src="https://mythuatbui.edu.vn/wp-content/uploads/2025/01/hinh-dong-vat-cute-de-thuong-3.png" alt="Ảnh thành viên 4">
-            <div class="member-details">
-                <h2>Hải Vy</h2>
-                <p>Lớp: 12A</p>
-                <p><a href="https://www.facebook.com/username4" target="_blank">Facebook</a></p>
-            </div>
-        </div>
-
-        <!-- Thành viên 5 -->
-        <div class="member">
-            <img src="https://mythuatbui.edu.vn/wp-content/uploads/2025/01/tranh-ve-dong-vat-cute.png" alt="Ảnh thành viên 5">
-            <div class="member-details">
-                <h2>Thảo Uyên</h2>
-                <p>Lớp: 12A</p>
-                <p><a href="https://www.facebook.com/username5" target="_blank">Facebook</a></p>
-            </div>
-        </div>
-
-        <div class="background">
-            <p>Nhóm học tập tuyệt vời!</p>
+    <!-- Modal Profile -->
+    <div id="profile-modal" class="profile-modal">
+        <div class="profile-modal-content">
+            <span class="close" onclick="closeProfile()">&times;</span>
+            <div id="profile-info"></div>
         </div>
     </div>
+
+    <script>
+        // Dữ liệu của các thành viên
+        const members = {
+            member1: {
+                avatar: 'member1.jpg',
+                name: 'Thành viên 1',
+                birthday: '01/01/2000',
+                hobbies: 'Đọc sách, Du lịch, Lập trình',
+                goal: 'Trở thành lập trình viên giỏi',
+                ideal: 'Giúp đỡ cộng đồng, học hỏi không ngừng',
+                dream: 'Đi du lịch khắp thế giới'
+            },
+            member2: {
+                avatar: 'member2.jpg',
+                name: 'Thành viên 2',
+                birthday: '15/03/1999',
+                hobbies: 'Chơi game, Âm nhạc, Thể thao',
+                goal: 'Làm việc tại một công ty công nghệ',
+                ideal: 'Đạt được sự cân bằng trong công việc và cuộc sống',
+                dream: 'Tạo ra một sản phẩm công nghệ đột phá'
+            },
+            member3: {
+                avatar: 'member3.jpg',
+                name: 'Thành viên 3',
+                birthday: '10/07/1998',
+                hobbies: 'Nấu ăn, Chơi thể thao',
+                goal: 'Học thêm về AI và Data Science',
+                ideal: 'Phát triển bản thân và nghề nghiệp',
+                dream: 'Mở một nhà hàng của riêng mình'
+            },
+            member4: {
+                avatar: 'member4.jpg',
+                name: 'Thành viên 4',
+                birthday: '22/11/2001',
+                hobbies: 'Vẽ, Du lịch',
+                goal: 'Trở thành một nhà thiết kế đồ họa',
+                ideal: 'Làm việc sáng tạo và truyền cảm hứng',
+                dream: 'Tạo ra các dự án thiết kế độc đáo'
+            },
+            member5: {
+                avatar: 'member5.jpg',
+                name: 'Thành viên 5',
+                birthday: '5/5/1997',
+                hobbies: 'Chơi đàn, Đi du lịch',
+                goal: 'Trở thành nhạc sĩ nổi tiếng',
+                ideal: 'Sống một cuộc sống bình yên và hạnh phúc',
+                dream: 'Sáng tác một album âm nhạc'
+            }
+        };
+
+        // Hiển thị profile thành viên
+        function showProfile(memberId) {
+            const member = members[memberId];
+            const profileInfo = `
+                <img src="${member.avatar}" alt="${member.name}" class="profile-avatar">
+                <h3>${member.name}</h3>
+                <p><strong>Sinh nhật:</strong> ${member.birthday}</p>
+                <p><strong>Sở thích:</strong> ${member.hobbies}</p>
+                <p><strong>Mục tiêu:</strong> ${member.goal}</p>
+                <p><strong>Lý tưởng:</strong> ${member.ideal}</p>
+                <p><strong>Ước mơ:</strong> ${member.dream}</p>
+            `;
+            document.getElementById('profile-info').innerHTML = profileInfo;
+            document.getElementById('profile-modal').style.display = 'block';
+        }
+
+        // Đóng modal
+        function closeProfile() {
+            document.getElementById('profile-modal').style.display = 'none';
+        }
+    </script>
+
 </body>
 </html>
-
